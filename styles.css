@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=MedievalSharp);
+*, *::before, *::after {
+  box-sizing: border-box;
+  /*font-family: Apple Chancery;  Use the custom font for elements, and fallback to 'Gotham Rounded' if the custom font is not available */
+}
+
+/* ... (rest of your styles) ... */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* font-family: Gotham Rounded; */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Dungeon-Door-Thumbnail.gif'); /* Replace 'your-background.gif' with the path to your GIF */
+  background-size: cover;
+  background-position: center;
+  cursor: url('cursword.png'), auto; /* Replace 'your-custom-cursor.png' with the path to your custom cursor image */
+  font-family: 'Old English Text MT', sans-serif;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  /* Updated styles for container */
+  width: 800px;
+  max-width: 80%;
+  background-image: url('containerimage.png'); /* Replace with your container background image path */
+  background-size: 100% 100%; /* Adjust this value to cover the entire width and height of the container */
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  margin-top: 20px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: hsl(200, 100%, 50%);
+  border: 1px solid hsl(200, 100%, 30%);
+  border-radius: 5px;
+  background-image: url('.png'); /* Replace with your button background image path */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  border: 1px solid hsl(200, 100%, 30%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  font-family: 'MedievalSharp', sans-serif;
+}
+
+.btn:hover {
+  border-color: black;
+}
